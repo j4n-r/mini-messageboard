@@ -11,8 +11,8 @@ const mongoDB = "mongodb+srv://janruegge:SPJ5dk9GopGorMZj@cluster0.2kq9qe4.mongo
 /* GET home page. */
 router.get('/', async (req, res, next) => {
   let results =   await Messages.find({})
-  res.send(results).status(200);
-  // res.render('index', { title: "Mini Messageboard", messages: messagesDB})
+  //res.send(results).status(200);
+  res.render('index', { title: "Mini Messageboard", messages: results})
 });
 
 // new page
