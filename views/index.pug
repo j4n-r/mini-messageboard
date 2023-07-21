@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 #{title}
+  p You can add a message #[a( href='/new' ) here].
+  each message in messages
+    <br>
+    p= message.text 
+    p= message.user 
+    p= message.added
+
