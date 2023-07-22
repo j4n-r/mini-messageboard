@@ -7,7 +7,7 @@ app = "mini-messageboard-j4nr"
 primary_region = "ams"
 
 [http_service]
-  internal_port = process.env.PORT
+  internal_port = 3000
   force_https = true
   auto_stop_machines = true
   auto_start_machines = true
@@ -16,7 +16,7 @@ primary_region = "ams"
 
 [[services]]
   http_checks = []
-  internal_port = process.env.PORT
+  internal_port = 3000
   processes = ["app"]
   protocol = "tcp"
   script_checks = []

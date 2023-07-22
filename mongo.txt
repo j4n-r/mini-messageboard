@@ -1,3 +1,0 @@
-janruegge
-SPJ5dk9GopGorMZj
-mongodb+srv://janruegge:SPJ5dk9GopGorMZj@cluster0.2kq9qe4.mongodb.net/?retryWrites=true&w=majority
