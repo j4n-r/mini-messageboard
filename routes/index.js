@@ -4,7 +4,7 @@ const Messages = require('../models/messages')
 
 const mongoose = require("mongoose")
 mongoose.set("strictQuery", false);
-const mongoDB = "mongodb+srv://janruegge:SPJ5dk9GopGorMZj@cluster0.2kq9qe4.mongodb.net/?retryWrites=true&w=majority"
+const mongoDB = process.env.mongoDB_URL
 
 
 

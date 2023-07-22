@@ -7,9 +7,11 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+require('dotenv').config()
+
 const mongoose = require("mongoose")
 mongoose.set("strictQuery", false);
-const mongoDB = "mongodb+srv://janruegge:SPJ5dk9GopGorMZj@cluster0.2kq9qe4.mongodb.net/?retryWrites=true&w=majority"
+const mongoDB = process.env.mongoDB_URL
 
 var app = express();
 
